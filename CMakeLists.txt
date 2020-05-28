@@ -8,7 +8,7 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 set(ERLANG_HOME "/opt/OTP")
 find_package(Erlang)
 
-file(GLOB SOURCES src/*.cpp)
+file(GLOB SOURCES src/*.cpp src/*.c)
 
 add_library(hc128_nif SHARED ${SOURCES})
 
